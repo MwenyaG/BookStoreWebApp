@@ -1,0 +1,25 @@
+﻿body {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    background-image: linear-gradient(to bottom right, #2ecc71, #3498db);
+    color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.confirmation-container {
+    text-align: center;
+}
+
+h1 {
+    color: #FFD401;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2em;
+    margin-top: 20px;
+}

@@ -1,0 +1,99 @@
+﻿body {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    background-image: linear-gradient(to bottom right, #3498db, #2c3e50);
+    color: #ecf0f1;
+}
+
+h1 {
+    color: #FFD401;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    width: 70%;
+    margin: 50px auto;
+    padding: 2rem;
+    background-color: #3498db;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.scale {
+    border: 2px solid #FFD401;
+    width: 15rem;
+    height: 22.5rem;
+}
+
+.custom-button {
+    position: relative;
+    display: inline-block;
+    border: none;
+    background: #FFD401;
+    color: #183153;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25em;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    padding: 18px 25px;
+    border-radius: 8px;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    margin-right: 75px;
+}
+
+    .custom-button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #183153;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.4s ease-in-out;
+        z-index: -1;
+    }
+
+    .custom-button:hover,
+    .custom-button:focus {
+        background-color: #183153;
+        color: #FFD401;
+        box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.4);
+    }
+
+    .custom-button::before,
+    .custom-button::before {
+        transform: scaleX(1);
+    }
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+.title {
+    font-weight: bold;
+    color: #FFD401;
+}
+
+.title-container {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+    .title-container:hover {
+        transform: scale(1.1);
+    }
